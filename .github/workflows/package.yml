@@ -9,12 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: singingwolfboy/build-dpkg-buster@v1
+      - uses: legoktm/build-dpkg@master
         id: build
         with:
-          args: --unsigned-source --unsigned-changes
+          args: --unsigned-source --unsigned-changes --build=full
 
       - uses: actions/upload-artifact@v1
         with:
-          name: ${{ steps.build.outputs.filename }}
+          name: artifacts
           path: "*.{deb,dsc,changes,buildinfo,tar.xz}"
