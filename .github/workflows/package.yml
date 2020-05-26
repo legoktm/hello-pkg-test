@@ -17,4 +17,4 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: ${{ steps.build.outputs.filename }}
-          path: ${{ steps.build.outputs.filename }}
+          path: "*.{deb,dsc,changes,buildinfo,tar.xz}"
