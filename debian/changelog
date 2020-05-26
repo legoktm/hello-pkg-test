@@ -1,4 +1,4 @@
-hello (2.11) UNRELEASED; urgency=medium
+hello (2.11) focal; urgency=medium
 
   * Switch to native.
 
