@@ -12,9 +12,9 @@ jobs:
       - uses: legoktm/build-dpkg@master
         id: build
         with:
-          args: --unsigned-source --unsigned-changes
+          args: --no-sign
 
       - uses: actions/upload-artifact@v1
         with:
           name: artifacts
-          path: "*.{deb,dsc,changes,buildinfo,tar.xz}"
+          path: "workspace/*.{deb,dsc,changes,buildinfo,tar.xz}"
