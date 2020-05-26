@@ -18,3 +18,9 @@ jobs:
         with:
           name: artifacts
           path: output
+
+      - uses: legoktm/gh-action-dput@master
+        with:
+          gpg_key: ${{ secrets.GPG_KEY }}
+          repository: ppa:kiwixteam/kiwix-test
+          packages: output/*_source.changes
