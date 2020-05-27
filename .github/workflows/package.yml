@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix: 
-        distro: [focal, bionic]
+        distro: [focal, eoan, bionic]
     steps:
       - uses: actions/checkout@v2
 
