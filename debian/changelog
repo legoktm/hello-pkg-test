@@ -2,7 +2,7 @@ hello (2.11) focal; urgency=medium
 
   * Switch to native.
 
- -- Kunal Mehta <legoktm@debian.org>  Tue, 26 May 2020 01:50:23 -0700
+ -- Kiwix robot test <kiwix@legoktm.com>  Tue, 26 May 2020 01:50:23 -0700
 
 hello (2.10-2) unstable; urgency=medium
 
