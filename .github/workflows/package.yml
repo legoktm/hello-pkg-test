@@ -11,7 +11,7 @@ jobs:
 
       - uses: legoktm/gh-action-auto-dch@master
         with:
-          fullname: Kiwix auto robot
+          fullname: Kiwix robot test
           email: kiwix@legoktm.com
           distro: focal
 
