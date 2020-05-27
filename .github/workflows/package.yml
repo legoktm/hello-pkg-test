@@ -19,14 +19,14 @@ jobs:
           distro: focal
 
       - uses: legoktm/build-dpkg@focal
-        if: matrix.distro == "focal"
+        if: matrix.distro == 'focal'
         name: Build package for ${{ matrix.distro }}
         id: build-focal
         with:
           args: --no-sign
 
       - uses: legoktm/build-dpkg@bionic
-        if: matrix.distro == "bionic"
+        if: matrix.distro == 'bionic'
         name: Build package for ${{ matrix.distro }}
         id: build-bionic
         with:
