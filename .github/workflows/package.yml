@@ -25,7 +25,7 @@ jobs:
       - uses: legoktm/build-dpkg@eoan
         if: matrix.distro == 'eoan'
         name: Build package for eoan
-        id: build-bionic
+        id: build-eoan
         with:
           args: --no-sign
 
