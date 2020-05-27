@@ -1,7 +1,4 @@
-on:
-  push:
-    branches:
-      - master
+on: [push, pull_request]
 
 jobs:
   build-deb:
@@ -34,10 +31,12 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: artifacts
+          name: Packages for ${{ matrix.distro }}
           path: output
 
       - uses: legoktm/gh-action-dput@master
+        # Only upload on pushes to master or tag
+        if: github.event_name == 'push' && (github.event.ref == 'refs/heads/master || startsWith(github.event.ref, 'refs/tags'))
         with:
           gpg_key: ${{ secrets.GPG_KEY }}
           repository: ppa:kiwixteam/kiwix-test
