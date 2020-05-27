@@ -1,3 +1,9 @@
+hello (2.12~alpha1) focal; urgency=medium
+
+  * Test
+
+ -- Kunal Mehta <legoktm@member.fsf.org>  Tue, 26 May 2020 21:26:51 -0700
+
 hello (2.11) focal; urgency=medium
 
   * Switch to native.
