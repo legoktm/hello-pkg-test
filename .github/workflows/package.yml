@@ -22,6 +22,13 @@ jobs:
         with:
           args: --no-sign
 
+      - uses: legoktm/build-dpkg@eoan
+        if: matrix.distro == 'eoan'
+        name: Build package for eoan
+        id: build-bionic
+        with:
+          args: --no-sign
+
       - uses: legoktm/build-dpkg@bionic
         if: matrix.distro == 'bionic'
         name: Build package for bionic
