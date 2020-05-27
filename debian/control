@@ -3,7 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: Santiago Vila <sanvila@debian.org>
 Standards-Version: 4.3.0
-Build-Depends: debhelper-compat (= 12), help2man, texinfo
+Build-Depends: debhelper-compat (= 11), help2man, texinfo
 Homepage: http://www.gnu.org/software/hello/
 Rules-Requires-Root: no
 
