@@ -16,7 +16,7 @@ jobs:
         with:
           fullname: Kiwix robot test
           email: kiwix@legoktm.com
-          distro: focal
+          distro: ${{ matrix.distro }}
 
       - uses: legoktm/build-dpkg@focal
         if: matrix.distro == 'focal'
