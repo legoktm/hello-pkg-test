@@ -9,6 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: legoktm/gh-action-auto-dch@master
+        with:
+          fullname: Kiwix auto robot
+          email: kiwix@legoktm.com
+          distro: focal
+
       - uses: legoktm/build-dpkg@master
         id: build
         with:
