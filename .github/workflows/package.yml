@@ -42,6 +42,7 @@ jobs:
         id: build-ubuntu-groovy
         with:
           args: --no-sign
+          ppa: kiwixteam/kiwix-test
 
       - uses: legoktm/gh-action-build-deb@ubuntu-focal
         if: matrix.distro == 'ubuntu-focal'
@@ -49,6 +50,7 @@ jobs:
         id: build-ubuntu-focal
         with:
           args: --no-sign
+          ppa: kiwixteam/kiwix-test
 
       - uses: legoktm/gh-action-build-deb@ubuntu-eoan
         if: matrix.distro == 'ubuntu-eoan'
@@ -56,6 +58,7 @@ jobs:
         id: build-ubuntu-eoan
         with:
           args: --no-sign
+          ppa: kiwixteam/kiwix-test
 
       - uses: legoktm/gh-action-build-deb@ubuntu-bionic
         if: matrix.distro == 'ubuntu-bionic'
@@ -63,6 +66,7 @@ jobs:
         id: build-ubuntu-bionic
         with:
           args: --no-sign
+          ppa: kiwixteam/kiwix-test
 
       - uses: actions/upload-artifact@v2
         with:
