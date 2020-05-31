@@ -11,7 +11,7 @@ jobs:
 
       - uses: legoktm/gh-action-auto-dch@master
         with:
-          fullname: Kiwix robot
+          fullname: Kiwix builder
           email: robot@kiwix.build
           distro: ${{ matrix.distro }}
 
